@@ -3,6 +3,7 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup as bs
 
+def collegeAdd(urlx):
 url1 = 'https://www.acharya.ac.in/'
 
 page = requests.get(url1)

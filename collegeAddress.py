@@ -22,4 +22,13 @@ def collegeAdd(urlx):
 
 
 url = 'https://www.acharya.ac.in/'
-print(f"College Address: {collegeAdd(url)}")
+addr = collegeAdd(url)
+# print(f"College Address: {addr}")
+ul = [url]
+al = [addr]
+dict1 = {"url":ul,"Address":al}
+
+df = pd.DataFrame(dict1)
+
+df.to_csv('file1.csv')
+print(df)
